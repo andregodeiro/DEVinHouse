@@ -1,0 +1,8 @@
+.acontece_natal {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.acontece_natal img {
+  width: 300px;
+}
