@@ -1,8 +1,87 @@
+* {
+  margin: 0px;
+  text-decoration: none;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: rgb(247, 247, 247);
+}
+
+.header {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.subtitulo {
+  text-align: center;
+}
+
+.navbar {
+  display: flex;
+  gap: 15px;
+  margin-top: 30px;
+  justify-content: center;
+}
+
+.navbar a {
+  background-color: rgb(41, 41, 41);
+  padding: 10px;
+  border-radius: 10px;
+  color: white;
+}
+
+.navbar a:hover {
+  background-color: goldenrod;
+  color: white;
+  transition: 300ms;
+}
+
+.principal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  padding: 10px;
+  max-width: 100%;
+  margin-top: 70px;
+}
+
+.principal img {
+  width: 600px;
+  border-radius: 10px;
+}
+
+.info_principal {
+  display: flex;
+  flex-direction: column;
+}
+
+.saiba_mais {
+  margin-top: 30px;
+}
+
+.saiba_mais a {
+  background-color: goldenrod;
+  border-radius: 10px;
+  padding: 10px;
+  color: black;
+}
+
+.saiba_mais a:hover {
+  background-color: rgb(41, 41, 41);
+  color: white;
+  transition: 300ms;
+}
+
 .acontece_natal {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 70px;
 }
 
 .acontece_natal img {
   width: 300px;
+  border-radius: 10px;
 }
