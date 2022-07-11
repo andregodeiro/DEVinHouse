@@ -77,33 +77,32 @@
 
   <br>
 
-  <form action="./" method="post">
-    <span>Fale Conosco</span>
-    <div>
-      <label for="nome">Nome</label>
-      <input type="text" id="nome" name="nome-usuario">
-    </div>
-    <div>
-      <label for="email">E-mail</label>
-      <input type="email" id="email" name="email-usuario">
-    </div>
-    <div>
-      <label for="mensagem">Descrição</label>
-      <input type="text" id="descrição" name="mensagem-usuario">
-    </div>
-    <button>Enviar</button>
-  </form>
+  <section class="formulario">
+    <form action="" id="formulario">
+      <h2>Fale Conosco</h2>
+      <input name="nome" id="inputNome" rows="1" placeholder="Nome:"></input>
+      <input name="email" id="inputEmail" rows="1" placeholder="E-mail:"></input>
+      <input name="descrição" id="inputDescricao" placeholder="Message:"></input>
+      <button id="botao" type="submit">Enviar</button>
+    </form>
+  </section>
 
   <footer>
-    <div>
-      <p>Quer ter seu evento na Sigma? Clique <a href="">Aqui</a></p>
-      <p>Contato: (84) 2020-0000</p>
-      <p>Rua Sigma, 255 | Capim Macio | Natal - RN | CEP 59000-000</p>
-      <p>Sigma Eventos. Todos os Direitos Reservados. &copy; 2022</p>
+    <div class="rodape">
+      <div class="rodape_1">
+        <ion-icon class="instagram" name="logo-instagram"></ion-icon>
+        <ion-icon class="whats" name="logo-whatsapp"></ion-icon>
+        <ion-icon class="email" name="mail-outline"></ion-icon>
+      </div>
+      <span>Rua Sigma, 255 | Capim Macio | Natal - RN | CEP 59000-000</span>
+      <p>SunTown Eventos. Todos os Direitos Reservados. &copy; 2022</p>
     </div>
   </footer>
 
-
+  <script src="./script.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
 </body>
 

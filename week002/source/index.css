@@ -85,3 +85,18 @@
   width: 300px;
   border-radius: 10px;
 }
+
+.formulario {
+  margin-top: 100px;
+  text-align: center;
+}
+
+.rodape {
+  margin-top: 70px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.rodape_1 {
+  padding: 10px;
+}
