@@ -36,3 +36,5 @@ const convidados = [
     setor: "Pista",
   },
 ];
+
+var lista = [convidados];
