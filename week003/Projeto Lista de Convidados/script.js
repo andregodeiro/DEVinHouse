@@ -86,3 +86,29 @@ function separarArquibancada(lista) {
 let listaArquibancada = separarArquibancada(liberarBebidas);
 
 console.log(listaArquibancada);
+
+const mostrarCamarote = document.getElementById("listaCamarote");
+const mostrarPista = document.getElementById("listaPista");
+const mostrarArquibancada = document.getElementById("listaArquibancada");
+
+let camaroteLi = listaCamarote.forEach((convidados, i) => {
+  let item = document.createElement("li");
+  let convidado = listaCamarote[i].nome + " " + listaCamarote[i].sobrenome;
+  item.textContent = convidado;
+  mostrarCamarote.appendChild(item);
+});
+
+let pistaLi = listaPista.forEach((convidados, i) => {
+  let item = document.createElement("li");
+  let convidado = listaPista[i].nome + " " + listaPista[i].sobrenome;
+  item.textContent = convidado;
+  mostrarPista.appendChild(item);
+});
+
+let arquibancadaLi = listaArquibancada.forEach((convidados, i) => {
+  let item = document.createElement("li");
+  let convidado =
+    listaArquibancada[i].nome + " " + listaArquibancada[i].sobrenome;
+  item.textContent = convidado;
+  mostrarArquibancada.appendChild(item);
+});
