@@ -53,3 +53,36 @@ function liberarBebidas(array) {
 
 let listaBebidas = liberarBebidas(convidados);
 console.log(listaBebidas);
+
+function separarCamarote(lista) {
+  var listaFiltrada = Object.values(convidados).filter(
+    (objeto) => objeto.setor === "Camarote"
+  );
+  return listaFiltrada;
+}
+
+let listaCamarote = separarCamarote(liberarBebidas);
+
+console.log(listaCamarote);
+
+function separarPista(lista) {
+  var listaFiltrada = Object.values(convidados).filter(
+    (objeto) => objeto.setor === "Pista"
+  );
+  return listaFiltrada;
+}
+
+let listaPista = separarPista(liberarBebidas);
+
+console.log(listaPista);
+
+function separarArquibancada(lista) {
+  var listaFiltrada = Object.values(convidados).filter(
+    (objeto) => objeto.setor === "Arquibancada"
+  );
+  return listaFiltrada;
+}
+
+let listaArquibancada = separarArquibancada(liberarBebidas);
+
+console.log(listaArquibancada);
