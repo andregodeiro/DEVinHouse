@@ -44,8 +44,10 @@ function liberarBebidas(array) {
     listaOpen.push(array[i]);
     if (convidados[i].idade >= 18) {
       listaOpen[i].openBar = true;
+      listaOpen[i].sobrenome = listaOpen.sobrenome + " 🍹";
     } else {
       listaOpen[i].openBar = false;
+      listaOpen[i].sobrenome = listaOpen.sobrenome + " ⛔";
     }
   });
   return listaOpen;
