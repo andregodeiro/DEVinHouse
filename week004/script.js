@@ -17,6 +17,7 @@ let contasClientes = [
 ];
 
 const selectConta = document.getElementById("conta");
+const strongMensagem = document.getElementById("mensagem");
 const body = document.body;
 
 const adicionaOpcao = (value, text) => {
@@ -36,3 +37,36 @@ const populaSelect = () => {
 };
 
 body.onload = populaSelect;
+
+const exibeMensagem = (mensagem, type = "error") => {
+  strongMensagem.textContent = mensagem;
+
+  strongMensagem.className = type === "error" ? "error" : "success";
+};
+
+const sacar = (conta, valor) => {
+  if (isNaN(valor) || valor <= 0) {
+    exibeMensagem("Valor inválido");
+    return;
+  }
+
+  if (valor > conta.saldo) {
+    exibeMensagem(`Saldo insuficiente. Saldo atual: ${conta.saldo}`);
+    return;
+  }
+
+  const novoSaldo = conta.saldo - valor;
+
+  const contasSemContaAtual = contasClientes.filter((c) => c.id !== conta.id);
+
+  const contasAtualizadas = (contasClientes = [
+    ...contasSemContaAtual,
+    { ...conta, saldo: novoSaldo },
+  ]);
+
+  contasClientes = contasAtualizadas;
+
+  exibeMensagem("Saque efetuado com sucesso!", "success");
+};
+
+// conta = contaAtual
