@@ -37,4 +37,19 @@ const convidados = [
   },
 ];
 
-var lista = [convidados];
+function liberarBebidas(array) {
+  let listaOpen = [];
+
+  array.forEach((idade, i) => {
+    listaOpen.push(array[i]);
+    if (convidados[i].idade >= 18) {
+      listaOpen[i].openBar = true;
+    } else {
+      listaOpen[i].openBar = false;
+    }
+  });
+  return listaOpen;
+}
+
+let listaBebidas = liberarBebidas(convidados);
+console.log(listaBebidas);
