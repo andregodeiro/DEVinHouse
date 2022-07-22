@@ -22,18 +22,16 @@ const body = document.body;
 const adicionaOpcao = (value, text) => {
   const option = document.createElement("option");
   option.value = value;
-  option.textContent = "text;
-
+  option.textContent = text;
   selectConta.appendChild(option);
 };
 
 const populaSelect = () => {
   selectConta.innerHTML = "";
-  adicionaOpcao('0','(Selecione)');
+  adicionaOpcao("0", "(Selecione)");
 
   contasClientes.forEach((conta) => {
-    adicionaOpcao(conta.id, conta.nome)
-
+    adicionaOpcao(conta.id, conta.nome);
   });
 };
 
