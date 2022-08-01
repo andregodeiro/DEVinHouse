@@ -25,4 +25,11 @@ class Pedido {
     this.estaPago = false;
     this.listaProdutos = [];
   }
+
+  adicionarProduto(produto) {
+    const validaProduto = produto instanceof Produto;
+    if (validaProduto) {
+      this.listaProdutos.push(produto);
+    }
+  }
 }
