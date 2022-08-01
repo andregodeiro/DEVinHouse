@@ -1,3 +1,3 @@
-import { saudacao } from "./saudacao";
+import { saudacao } from "./saudacao.js";
 
-console.log(saudacao)
+console.log(saudacao());
