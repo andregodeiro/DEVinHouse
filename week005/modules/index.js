@@ -24,6 +24,13 @@ class Pedido {
     this.dataPedido = new Date().toLocaleDateString();
     this.estaPago = false;
     this.listaProdutos = [];
+
+    const calcularTotal = function calcularPedido() {
+      let total = this.listaProdutos.reduce((anterior, atual) => {
+        return anterior + atual.preco * atual.quantidade;
+      }, 0);
+      return total;
+    };
   }
 
   adicionarProduto(produto) {
