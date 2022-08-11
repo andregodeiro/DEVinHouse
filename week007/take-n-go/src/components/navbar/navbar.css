@@ -1,0 +1,9 @@
+.navbar {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.navbar img {
+  width: 500px;
+}
