@@ -1,0 +1,15 @@
+.cardapioPrincipal {
+  display: flex;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.cardPrato {
+  background: white;
+  color: black;
+  /* text-align: start; */
+}
+
+.cardPrato img {
+  width: 300px;
+}
