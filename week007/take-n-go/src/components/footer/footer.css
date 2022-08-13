@@ -1,0 +1,19 @@
+.footer {
+  background: beige;
+  display: flex;
+  flex-direction: column;
+  color: black;
+  text-decoration: none;
+}
+
+.redesFooter {
+  display: flex;
+  flex-direction: column;
+}
+
+.containerCima {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+}
