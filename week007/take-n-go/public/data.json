@@ -1,0 +1,86 @@
+{
+  "principais": [
+    {
+      "id": 1,
+      "imagem": "http",
+      "nome": "Ribs on the barbie",
+      "descricao": "Deliciosas costelinhas",
+      "subsecao": "Porco",
+      "valor": 35,
+      "preparo": 45
+    },
+    {
+      "id": 2,
+      "imagem": "http",
+      " nome": "Hot Spicy Shrimp",
+      "descricao": "Camarões apimentados",
+      "subsecao": "Camarão",
+      "valor": 50,
+      "preparo": 35
+    },
+    {
+      "id": 3,
+      "imagem": "http",
+      " nome": "Buffalo Wings",
+      "descricao": "Asinhas de frango apimentadas",
+      "subsecao": "Frango",
+      "valor": 35,
+      "preparo": 45
+    }
+  ],
+  "entradas": [
+    {
+      "id": 4,
+      "imagem": "http",
+      "nome": "Salada Ceasar",
+      "descricao": "Combinação de alface, queijo Parmesão, dos queridos croutons Take 'n Go e Molho Caesar.",
+      "subsecao": "Saladas",
+      "valor": 25,
+      "preparo": 15
+    },
+    {
+      "id": 5,
+      "imagem": "http",
+      " nome": "Firecracker Shrimp Nachos",
+      "descricao": " camarões empanados e temperados com nosso molho Firecracker. Servidos com saborosas tortillas crocantes.",
+      "subsecao": "Prato da Semana",
+      "valor": 35,
+      "preparo": 30
+    },
+    {
+      "id": 6,
+      "imagem": "http",
+      " nome": "Ribs Coxinha",
+      "descricao": "coxinhas recheadas com a nossa suculenta Ribs on the Barbie, cream cheese e um toque de limão siciliano, em uma combinação incrível com nossos temperos secretos que finalizam a receita.",
+      "subsecao": "Porções",
+      "valor": 25,
+      "preparo": 15
+    }
+  ],
+  "bebidas": [
+    {
+      "id": 7,
+      "imagem": "http",
+      "nome": "Refrigerante Médio",
+      "descricao": "500ml de refrigerante. Escolha entre Coca-Cola, Coca-Cola Zero, Sprite e Guaraná",
+      "valor": 9,
+      "preparo": 1
+    },
+    {
+      "id": 8,
+      "imagem": "http",
+      " nome": "Refrigerante Grande",
+      "descricao": "700ml de refrigerante. Escolha entre Coca-Cola, Coca-Cola Zero, Sprite e Guaraná",
+      "valor": 10,
+      "preparo": 1
+    },
+    {
+      "id": 9,
+      "imagem": "http",
+      " nome": "Suco Natural",
+      "descricao": "500 ml de suco natural. Sabores disponíveis: Laranja, Maracujá, Abacaxi e Limão",
+      "valor": 10,
+      "preparo": 1
+    }
+  ]
+}

@@ -1,17 +1,15 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
 import "./App.css";
-import { Header } from "./components/header/header";
 import { Navbar } from "./components/navbar/navbar";
-import { Menu } from "./components/menu/menu";
 import { Footer } from "./components/footer/footer";
+import Secao from "./components/secao/secao";
+import produtos from "../public/data.json";
 
 function App() {
   return (
-    <div>
+    <div className="principal">
       <Navbar />
-      {/* <Header /> */}
-      <Menu />
+      <Secao produtos={produtos.principais} nomeSecao={"Entradas"} />
+      <Secao produtos={produtos.bebidas} nomeSecao={"Entradas"} />
       <Footer />
     </div>
   );
