@@ -1,53 +1,22 @@
-export const MainContent = () => {
+import { CardList } from "./CardList";
+import { Summary } from "./Summary";
+import { TipCard } from "./TipCard";
+import PropTypes from "prop-types";
+
+const umaDica = {
+  titulo: "uma dica",
+  descricao:
+    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum cum labore saepe laboriosam? Illo dolor eveniet perspiciatis unde totam commodi quas explicabo maiores non voluptate quidem architecto, quae odit nihil ab aliquam esse inventore adipisci voluptas qui? Consectetur, sint? Ipsa hic atque blanditiis iure a aut debitis error enim aliquam.",
+  linguagem: "uma linguagem",
+  categoria: "Front-End",
+  video: "https://www.youtube.com/watch?v=vwbegraDXD8",
+};
+
+export const MainContent = ({}) => {
   return (
     <>
-      <div className="header">
-        <div>
-          <img
-            src="https://i.postimg.cc/KcRQ5778/knowledge-DB-readme.png"
-            alt="logo do site"
-          />
-        </div>
-      </div>
-
-      <div className="stats">
-        <div className="stotal">
-          <div>Total</div>
-          <div id="stotal">00</div>
-        </div>
-        <div className=" sfront">
-          <div>FrontEnd</div>
-          <div id="sfront">00</div>
-        </div>
-        <div className="sback">
-          <div>BackEnd</div>
-          <div id="sback">00</div>
-        </div>
-        <div className="sfull">
-          <div>FullStack</div>
-          <div id="sfull">00</div>
-        </div>
-        <div className="sfull">
-          <div>SoftSkill</div>
-          <div id="ssoft">00</div>
-        </div>
-        <div className="busca">
-          <input type="text" id="txtBusca" placeholder="Buscar..." />
-          <button type="reset" className="limparBusca">
-            <a href="">
-              <img
-                src="./source/img/icons/limpar.png"
-                alt="botão limpar"
-                className="botaoLimpar"
-              />
-            </a>
-          </button>
-        </div>
-      </div>
-
-      <div className="containerCards">
-        <ul className="card" id="cards"></ul>
-      </div>
+      <Summary />
+      <TipCard tip={umaDica} />
     </>
   );
 };
